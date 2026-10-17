@@ -15,3 +15,7 @@ h2 { font-size: 19px; margin: 28px 0 6px; }
 ul, ol { padding-left: 22px; }
 li { margin: 4px 0; }
 footer { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 13px; color: var(--muted); }
+.langs { font-size: 13px; line-height: 1.9; color: var(--muted, #888); margin: 0 0 18px; }
+.langs a { white-space: nowrap; }
+.langs b { white-space: nowrap; }
+.note { border-left: 3px solid #ff6a45; padding-left: 10px; }
