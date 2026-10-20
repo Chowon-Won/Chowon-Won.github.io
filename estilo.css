@@ -126,7 +126,7 @@ section { padding: clamp(56px, 9vw, 120px) 0; }
 
 /* Además del lienzo */
 .more { background: linear-gradient(180deg, var(--night) 0%, var(--night-2) 100%); }
-.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.grid4 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
 .grid4 > div { padding: 28px 24px 8px 0; }
 .grid4 > div + div { padding-left: 24px; border-left: 1px solid var(--line); }
 .grid4 svg { width: 34px; height: 34px; color: var(--fox); }
@@ -233,9 +233,6 @@ textarea { min-height: 150px; resize: vertical; }
   .langpick summary { padding: 14px 12px; font-size: 17px; }
   .top .menu .btn-sm { margin: 10px 0 0; justify-content: center; padding: 14px; font-size: 16px; }
   .burger { display: grid; place-items: center; }
-  .grid4 { grid-template-columns: 1fr 1fr; }
-  .grid4 > div:nth-child(3) { padding-left: 0; border-left: 0; }
-  .grid4 > div:nth-child(n+3) { border-top: 1px solid var(--line); }
   .foot .wrap { grid-template-columns: 1fr 1fr; }
   .foot .wrap > :first-child { grid-column: 1 / -1; }
 }
@@ -254,6 +251,11 @@ textarea { min-height: 150px; resize: vertical; }
   .plans, .contact .wrap, .row2 { grid-template-columns: 1fr; }
   .arrows { display: none; }
   .actions .btn { flex: 1 1 auto; justify-content: center; }
+}
+@media (max-width: 640px) {
+  .grid4 { grid-template-columns: 1fr; }
+  .grid4 > div, .grid4 > div + div { padding: 22px 0 14px; border-left: 0; }
+  .grid4 > div + div { border-top: 1px solid var(--line); }
 }
 @media (max-width: 480px) {
   .grid4 { grid-template-columns: 1fr; }
