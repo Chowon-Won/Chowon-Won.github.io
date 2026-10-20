@@ -22,7 +22,7 @@ body {
   margin: 0; background: var(--night); color: var(--moon);
   font: 17px/1.6 var(--body); overflow-x: hidden;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--fox); text-underline-offset: 3px; }
 a:hover { color: #ffb07a; }
 :focus-visible { outline: 3px solid var(--fox); outline-offset: 3px; border-radius: 6px; }
@@ -91,7 +91,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.12; l
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero .note { margin: 22px 0 0; font-size: 14px; color: var(--mist); }
 .stage { position: relative; height: clamp(440px, 52vw, 620px); }
-.stage .dev { position: absolute; width: auto; filter: drop-shadow(0 30px 60px rgba(5, 2, 15, .7)); border-radius: 26px; }
+.stage .dev { position: absolute; width: auto; max-width: none; filter: drop-shadow(0 30px 60px rgba(5, 2, 15, .7)); border-radius: 26px; }
 .stage .d1 { height: 100%; right: 4%; top: 0; transform: rotate(3deg); animation: rise 1s .15s cubic-bezier(.2, .8, .2, 1) both; z-index: 2; }
 .stage .d2 { height: 80%; right: 46%; top: 13%; transform: rotate(-6deg); opacity: .95; animation: rise2 1s .35s cubic-bezier(.2, .8, .2, 1) both; }
 @keyframes rise { from { opacity: 0; transform: translateY(60px) rotate(8deg); } to { opacity: 1; transform: rotate(3deg); } }
