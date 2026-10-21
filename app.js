@@ -1,4 +1,4 @@
-// VIXEN — web: menú, galería, visor, contacto y aviso de idioma. Sin dependencias.
+// VixArt — web: menú, galería, visor, contacto y aviso de idioma. Sin dependencias.
 (() => {
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -82,7 +82,7 @@
       if (!d.msg.trim()) { st.textContent = form.dataset.err; st.classList.add('bad'); $('#f-msg').focus(); return; }
       st.textContent = hint; st.classList.remove('bad');
       const body = d.msg.trim() + '\n\n— ' + [d.name, d.email].filter(Boolean).join(' · ');
-      location.href = 'mailto:' + form.dataset.to + '?subject=' + encodeURIComponent('[VIXEN] ' + d.topic) + '&body=' + encodeURIComponent(body);
+      location.href = 'mailto:' + form.dataset.to + '?subject=' + encodeURIComponent('[VixArt] ' + d.topic) + '&body=' + encodeURIComponent(body);
     });
   }
   const cp = $('.copy-mail');

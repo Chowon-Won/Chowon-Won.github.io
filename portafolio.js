@@ -1,4 +1,4 @@
-// VIXEN — portafolio público de un artista (lo aprobado por el equipo de VIXEN). Sin dependencias.
+// VixArt — portafolio público de un artista (lo aprobado por el equipo de VixArt). Sin dependencias.
 // Lee los datos públicos del servidor con la clave publicable (los permisos los aplica el servidor).
 (() => {
   const SB = 'https://qxslrzydmgocjcbvjvgw.supabase.co', KEY = 'sb_publishable_cakblXaw9MIuymC-BxxJ5Q_TXNTE_Fd';
@@ -6,13 +6,13 @@
   const T = es ? {
     loading: 'Cargando…', none: 'Este portafolio no existe o ya no está disponible.', error: 'No se pudo cargar el portafolio. Inténtalo de nuevo.',
     verified: 'Artista verificado', commissions: 'Comisiones', open: 'Abiertas', closed: 'Cerradas', from: 'desde', days: '~{0} días', slots: '{0} cupos libres',
-    note: 'VIXEN no participa en los pagos. Acuerda el trabajo, el precio y el pago directamente con el artista por sus redes.',
-    get: 'Descarga VIXEN', app: 'Este portafolio está hecho con VIXEN, la app de dibujo, cómic y animación.', title: 'Portafolio de {0} · VIXEN',
+    note: 'VixArt no participa en los pagos. Acuerda el trabajo, el precio y el pago directamente con el artista por sus redes.',
+    get: 'Descarga VixArt', app: 'Este portafolio está hecho con VixArt, la app de dibujo, cómic y animación.', title: 'Portafolio de {0} · VixArt',
   } : {
     loading: 'Loading…', none: 'This portfolio does not exist or is no longer available.', error: 'The portfolio could not be loaded. Please try again.',
     verified: 'Verified artist', commissions: 'Commissions', open: 'Open', closed: 'Closed', from: 'from', days: '~{0} days', slots: '{0} slots left',
-    note: 'VIXEN does not take part in payments. Agree on the work, price and payment directly with the artist through their social accounts.',
-    get: 'Get VIXEN', app: 'This portfolio was made with VIXEN, the drawing, comic and animation app.', title: '{0}’s portfolio · VIXEN',
+    note: 'VixArt does not take part in payments. Agree on the work, price and payment directly with the artist through their social accounts.',
+    get: 'Get VixArt', app: 'This portfolio was made with VixArt, the drawing, comic and animation app.', title: '{0}’s portfolio · VixArt',
   };
   const f = (s, ...a) => s.replace(/\{(\d)\}/g, (_, i) => a[i]);
   if (!es) document.documentElement.lang = 'en';
