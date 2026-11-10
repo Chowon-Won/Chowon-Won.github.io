@@ -165,6 +165,7 @@ section { padding: clamp(56px, 9vw, 120px) 0; }
 
 /* Precio */
 .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 900px; }
+.plans.one { grid-template-columns: 1fr; max-width: 460px; }
 .plan { border-radius: 24px; padding: 30px; background: var(--night-2); border: 1px solid var(--line); }
 .plan.pro { background: linear-gradient(var(--night-2), var(--night-2)) padding-box, var(--grad) border-box; border: 2px solid transparent; position: relative; }
 .plan h3 { font-size: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
